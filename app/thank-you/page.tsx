@@ -1,6 +1,6 @@
 'use client'
 
-import { useEffect, useState } from 'react'
+import { useEffect, useState, Suspense } from 'react'
 import { useSearchParams } from 'next/navigation'
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card'
 import { Button } from '@/components/ui/button'
@@ -34,7 +34,7 @@ const agentNames: { [key: string]: string } = {
   'appointment-setter': 'AI Appointment Setter'
 }
 
-export default function ThankYouPage() {
+function ThankYouContent() {
   const searchParams = useSearchParams()
   const [orderDetails, setOrderDetails] = useState<any>(null)
 
@@ -187,9 +187,9 @@ export default function ThankYouPage() {
           {/* Action Buttons */}
           <div className="flex flex-col sm:flex-row gap-4">
             <Button asChild className="flex-1 bg-gradient-to-r from-blue-500 to-purple-500 hover:from-blue-600 hover:to-purple-600">
-              <Link href="/dashboard">
+              <Link href="/">
                 <ArrowRight className="h-4 w-4 mr-2" />
-                Go to Dashboard
+                Go to Home
               </Link>
             </Button>
             <Button variant="outline" className="flex-1 border-slate-600 text-slate-300 hover:bg-slate-800">
@@ -221,5 +221,19 @@ export default function ThankYouPage() {
         </div>
       </div>
     </div>
+  )
+}
+
+export default function ThankYouPage() {
+  return (
+    <Suspense fallback={
+      <div className="min-h-screen bg-gradient-to-br from-slate-900 via-purple-900 to-slate-900">
+        <div className="flex items-center justify-center min-h-screen">
+          <div className="animate-spin rounded-full h-32 w-32 border-b-2 border-white"></div>
+        </div>
+      </div>
+    }>
+      <ThankYouContent />
+    </Suspense>
   )
 } 

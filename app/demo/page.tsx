@@ -409,10 +409,10 @@ export default function DemoPage() {
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <Button asChild size="lg" className="bg-gradient-to-r from-blue-500 to-purple-500 hover:from-blue-600 hover:to-purple-600">
-                  <Link href="/dashboard">
+                  <a href="https://calendly.com/cereva/30min?month=2025-08" target="_blank" rel="noopener noreferrer">
                     <ShoppingCart className="h-5 w-5 mr-2" />
-                    Get Started Now
-                  </Link>
+                    Book Your Free AI Discovery Audit
+                  </a>
                 </Button>
                 <Button asChild size="lg" variant="outline" className="border-slate-600 text-slate-300 hover:bg-slate-800">
                   <Link href="/agents/receptionist">
