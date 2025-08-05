@@ -40,7 +40,6 @@ import {
   Calendar as CalendarIcon
 } from 'lucide-react'
 import Link from 'next/link'
-import PurchaseFlow from '@/components/PurchaseFlow'
 
 const agentData = {
   'receptionist': {
@@ -297,7 +296,6 @@ export default function AgentDetailPage() {
   const params = useParams()
   const agentId = params.agentId as string
   const agent = agentData[agentId as keyof typeof agentData]
-  const [showPurchaseFlow, setShowPurchaseFlow] = useState(false)
 
   if (!agent) {
     return (
@@ -305,10 +303,10 @@ export default function AgentDetailPage() {
         <div className="container mx-auto px-4 py-8">
           <div className="text-center">
             <h1 className="text-3xl font-bold text-white mb-4">Agent Not Found</h1>
-            <Link href="/dashboard">
+            <Link href="/">
               <Button>
                 <ArrowLeft className="h-4 w-4 mr-2" />
-                Back to Dashboard
+                Back to Home
               </Button>
             </Link>
           </div>
@@ -322,10 +320,10 @@ export default function AgentDetailPage() {
       <div className="container mx-auto px-4 py-8">
         {/* Header */}
         <div className="mb-8">
-          <Link href="/dashboard">
+          <Link href="/">
             <Button variant="ghost" className="text-slate-300 hover:text-white mb-4">
               <ArrowLeft className="h-4 w-4 mr-2" />
-              Back to Dashboard
+              Back to Home
             </Button>
           </Link>
           
@@ -494,11 +492,13 @@ export default function AgentDetailPage() {
                   <div className="text-4xl font-bold text-white mb-2">{agent.price}</div>
                   <p className="text-slate-400 mb-4">per month</p>
                   <Button 
-                    onClick={() => setShowPurchaseFlow(true)}
+                    asChild
                     className="w-full bg-gradient-to-r from-blue-500 to-purple-500 hover:from-blue-600 hover:to-purple-600"
                   >
-                    <ShoppingCart className="h-4 w-4 mr-2" />
-                    Get Started
+                    <a href="https://calendly.com/cereva/30min?month=2025-08" target="_blank" rel="noopener noreferrer">
+                      <ShoppingCart className="h-4 w-4 mr-2" />
+                      Book Your Free AI Discovery Audit
+                    </a>
                   </Button>
                 </div>
               </CardContent>
@@ -561,9 +561,11 @@ export default function AgentDetailPage() {
               </CardHeader>
               <CardContent>
                 <div className="space-y-3">
-                  <Button className="w-full bg-gradient-to-r from-blue-500 to-purple-500 hover:from-blue-600 hover:to-purple-600">
-                    <ShoppingCart className="h-4 w-4 mr-2" />
-                    Purchase Now
+                  <Button asChild className="w-full bg-gradient-to-r from-blue-500 to-purple-500 hover:from-blue-600 hover:to-purple-600">
+                    <a href="https://calendly.com/cereva/30min?month=2025-08" target="_blank" rel="noopener noreferrer">
+                      <ShoppingCart className="h-4 w-4 mr-2" />
+                      Book Your Free AI Discovery Audit
+                    </a>
                   </Button>
                   <Button asChild variant="outline" className="w-full border-slate-600 text-slate-300 hover:bg-slate-800">
                     <Link href={`/agents/${agentId}/requirements`}>
@@ -583,18 +585,6 @@ export default function AgentDetailPage() {
           </div>
         </div>
       </div>
-
-      <PurchaseFlow
-        agentType={agentId}
-        agentName={agent.name}
-        isOpen={showPurchaseFlow}
-        onClose={() => setShowPurchaseFlow(false)}
-        onSuccess={() => {
-          setShowPurchaseFlow(false)
-          // Redirect to dashboard after successful purchase
-          window.location.href = '/dashboard'
-        }}
-      />
     </div>
   )
 } 
