@@ -17,45 +17,43 @@ export default function Navigation() {
       <div className="ai-container">
         <div className="flex justify-between items-center h-16">
           <div className="flex items-center">
-            <Link href="/" className="text-2xl font-light ai-glow-text">
-              <span className="ai-text-gradient-primary">
-                Cereva
-              </span>
+            <Link href="/" className="flex items-center space-x-3">
+              {/* Logo */}
+              <div className="w-12 h-12 relative">
+                <img src="/logo.png" alt="Cereva Logo" className="w-full h-full object-contain" />
+              </div>
+              <span className="text-xl font-light text-white">Cereva</span>
             </Link>
           </div>
-          
+
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-8">
-            <Link href="/explore-agents" className="text-slate-300 hover:text-white transition-colors font-light hover:ai-text-gradient-primary">
+            <Link href="/explore-agents" className="text-slate-300 hover:text-white font-light transition-colors">
               Our Frameworks
             </Link>
           </div>
 
           {/* Mobile Menu Button */}
           <div className="md:hidden">
-            <button
+            <Button
+              variant="ghost"
+              size="sm"
               onClick={toggleMobileMenu}
-              className="text-slate-300 hover:text-white transition-colors p-2"
+              className="text-slate-300 hover:text-white"
             >
-              {isMobileMenuOpen ? (
-                <X className="h-6 w-6" />
-              ) : (
-                <Menu className="h-6 w-6" />
-              )}
-            </button>
+              {isMobileMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
+            </Button>
           </div>
         </div>
 
         {/* Mobile Menu */}
         {isMobileMenuOpen && (
-          <div className="md:hidden border-t border-slate-800/30 bg-black/80 backdrop-blur-sm">
+          <div className="md:hidden border-t border-slate-800/30 bg-black/60 backdrop-blur-sm">
             <div className="px-4 py-6 space-y-4">
-              <Link 
-                href="/explore-agents" 
-                className="block text-slate-300 hover:text-white transition-colors font-light py-2"
-                onClick={() => setIsMobileMenuOpen(false)}
-              >
-                Our Frameworks
+              <Link href="/explore-agents" onClick={() => setIsMobileMenuOpen(false)}>
+                <Button variant="ghost" className="w-full text-slate-300 hover:text-white font-light">
+                  Our Frameworks
+                </Button>
               </Link>
             </div>
           </div>
