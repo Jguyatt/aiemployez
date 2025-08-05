@@ -317,19 +317,19 @@ export default function DemoPage() {
                     )}
 
                     {/* Customer Message 3 */}
-                    {currentStep >= 5 && (
+                    {currentStep >= 5 && 'customer3' in scenario && scenario.customer3 && (
                       <div className="flex justify-end">
                         <div className="bg-blue-500 text-white rounded-lg px-4 py-2 max-w-xs">
-                          <p className="text-sm">{scenario?.customer3}</p>
+                          <p className="text-sm">{scenario.customer3}</p>
                         </div>
                       </div>
                     )}
 
                     {/* Agent Response 3 */}
-                    {currentStep >= 6 && (
+                    {currentStep >= 6 && 'agent3' in scenario && scenario.agent3 && (
                       <div className="flex justify-start">
                         <div className="bg-slate-700 text-white rounded-lg px-4 py-2 max-w-xs">
-                          <p className="text-sm">{scenario?.agent3}</p>
+                          <p className="text-sm">{scenario.agent3}</p>
                         </div>
                       </div>
                     )}
