@@ -33,11 +33,11 @@ export default function Footer() {
             <div className="space-y-3">
               <div className="flex items-center text-slate-400">
                 <Mail className="h-4 w-4 mr-3 text-purple-400" />
-                <span className="font-light">hello@cereva.com</span>
+                <a href="mailto:hello@cereva.com" className="font-light hover:text-white transition-colors">hello@cereva.com</a>
               </div>
               <div className="flex items-center text-slate-400">
                 <Phone className="h-4 w-4 mr-3 text-purple-400" />
-                <span className="font-light">+1 (628) 228-0057</span>
+                <a href="tel:+16282280057" className="font-light hover:text-white transition-colors">+1 (628) 228-0057</a>
               </div>
               <div className="flex items-center text-slate-400">
                 <MapPin className="h-4 w-4 mr-3 text-purple-400" />
@@ -61,8 +61,8 @@ export default function Footer() {
                 </a>
               </li>
               <li>
-                <a href="/api" className="hover:text-white transition-colors font-light hover:ai-text-gradient-primary">
-                  API Documentation
+                <a href="/demo" className="hover:text-white transition-colors font-light hover:ai-text-gradient-primary">
+                  Live Demo
                 </a>
               </li>
             </ul>
@@ -73,28 +73,18 @@ export default function Footer() {
             <h4 className="font-light mb-4 text-white text-lg">Support & Company</h4>
             <ul className="space-y-3 text-slate-400">
               <li>
-                <a href="/help" className="hover:text-white transition-colors font-light hover:ai-text-gradient-primary">
-                  Help Center
-                </a>
-              </li>
-              <li>
-                <a href="/contact" className="hover:text-white transition-colors font-light hover:ai-text-gradient-primary">
+                <a href="mailto:hello@cereva.com" className="hover:text-white transition-colors font-light hover:ai-text-gradient-primary">
                   Contact Us
                 </a>
               </li>
               <li>
-                <a href="/about" className="hover:text-white transition-colors font-light hover:ai-text-gradient-primary">
-                  About Us
+                <a href="tel:+16282280057" className="hover:text-white transition-colors font-light hover:ai-text-gradient-primary">
+                  Call Us
                 </a>
               </li>
               <li>
-                <a href="/blog" className="hover:text-white transition-colors font-light hover:ai-text-gradient-primary">
-                  Blog
-                </a>
-              </li>
-              <li>
-                <a href="/careers" className="hover:text-white transition-colors font-light hover:ai-text-gradient-primary">
-                  Careers
+                <a href="https://calendly.com/cerevaai/30min" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors font-light hover:ai-text-gradient-primary">
+                  Book Demo
                 </a>
               </li>
             </ul>
@@ -114,7 +104,15 @@ export default function Footer() {
                 placeholder="Enter your email"
                 className="flex-1 md:w-64 px-4 py-2 ai-input rounded-lg text-white placeholder-slate-400 font-light"
               />
-              <Button className="ai-button text-white font-light">
+              <Button 
+                className="ai-button text-white font-light"
+                onClick={() => {
+                  const email = document.querySelector('input[type="email"]') as HTMLInputElement;
+                  if (email && email.value) {
+                    window.open(`mailto:hello@cereva.com?subject=Newsletter Subscription&body=Please add ${email.value} to your newsletter.`);
+                  }
+                }}
+              >
                 Subscribe
                 <ArrowRight className="ml-2 h-4 w-4" />
               </Button>
@@ -128,10 +126,10 @@ export default function Footer() {
             <div className="flex items-center space-x-6">
               <p className="text-slate-400 font-light">&copy; 2024 Cereva. All rights reserved.</p>
               <div className="flex space-x-4">
-                <a href="/privacy" className="text-slate-400 hover:text-white transition-colors font-light text-sm">
+                <a href="mailto:hello@cereva.com" className="text-slate-400 hover:text-white transition-colors font-light text-sm">
                   Privacy Policy
                 </a>
-                <a href="/terms" className="text-slate-400 hover:text-white transition-colors font-light text-sm">
+                <a href="mailto:hello@cereva.com" className="text-slate-400 hover:text-white transition-colors font-light text-sm">
                   Terms of Service
                 </a>
               </div>
@@ -139,13 +137,13 @@ export default function Footer() {
             
             {/* Social Links */}
             <div className="flex items-center space-x-4">
-              <a href="https://twitter.com/cereva" className="text-slate-400 hover:text-white transition-colors">
+              <a href="mailto:hello@cereva.com" className="text-slate-400 hover:text-white transition-colors">
                 <Twitter className="h-5 w-5" />
               </a>
-              <a href="https://linkedin.com/company/cereva" className="text-slate-400 hover:text-white transition-colors">
+              <a href="mailto:hello@cereva.com" className="text-slate-400 hover:text-white transition-colors">
                 <Linkedin className="h-5 w-5" />
               </a>
-              <a href="https://github.com/cereva" className="text-slate-400 hover:text-white transition-colors">
+              <a href="mailto:hello@cereva.com" className="text-slate-400 hover:text-white transition-colors">
                 <Github className="h-5 w-5" />
               </a>
             </div>
