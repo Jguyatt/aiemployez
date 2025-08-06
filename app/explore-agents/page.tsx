@@ -279,7 +279,7 @@ export default function ExploreAgentsPage() {
             Book your free AI discovery audit and see how our custom framework process can revolutionize your operations.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <a href="https://calendly.com/cereva/30min?month=2025-08" target="_blank" rel="noopener noreferrer">
+            <a href="https://calendly.com/cerevaai/30min" target="_blank" rel="noopener noreferrer">
               <button className="text-lg px-8 py-4 bg-white text-slate-900 hover:bg-slate-100 group font-light rounded-lg transition-all duration-300">
                 Book Your Free AI Discovery Audit
                 <ArrowRight className="ml-2 h-5 w-5 inline group-hover:translate-x-1 transition-transform" />

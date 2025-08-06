@@ -191,7 +191,7 @@ export default function HomePage() {
           
           {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-6 animate-fade-in" style={{animationDelay: '0.8s'}}>
-            <a href="https://calendly.com/cereva/30min?month=2025-08" target="_blank" rel="noopener noreferrer">
+            <a href="https://calendly.com/cerevaai/30min" target="_blank" rel="noopener noreferrer">
               <button className="text-lg px-8 py-4 ai-button text-white group font-light ai-hover-lift purple-glow rounded-lg bg-gradient-to-r from-blue-500 to-purple-500 hover:from-blue-600 hover:to-purple-600 transition-all duration-300">
                 Book Your Free AI Discovery Audit
                 <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform inline" />
@@ -245,7 +245,7 @@ export default function HomePage() {
               <span className="ai-text-gradient-primary font-medium">80% cost reduction</span> while improving efficiency by 40%. 
               The ROI is immediate and substantial.
             </p>
-            <a href="https://calendly.com/cereva/30min?month=2025-08" target="_blank" rel="noopener noreferrer">
+            <a href="https://calendly.com/cerevaai/30min" target="_blank" rel="noopener noreferrer">
               <button className="ai-button-secondary text-white font-light px-8 py-4 ai-hover-lift purple-glow rounded-lg bg-gradient-to-r from-purple-500 to-pink-500 hover:from-purple-600 hover:to-pink-600 transition-all duration-300">
                 Join the AI Framework Revolution
                 <ArrowRight className="ml-2 h-5 w-5 inline" />
@@ -596,7 +596,7 @@ export default function HomePage() {
                 </div>
                 
                 <div className="pt-6">
-                  <a href="https://calendly.com/cereva/30min?month=2025-08" target="_blank" rel="noopener noreferrer">
+                  <a href="https://calendly.com/cerevaai/30min" target="_blank" rel="noopener noreferrer">
                     <button className="ai-button text-white font-light px-8 py-4 ai-hover-lift purple-glow rounded-lg bg-gradient-to-r from-blue-500 to-purple-500 hover:from-blue-600 hover:to-purple-600 transition-all duration-300">
                       Discover Your Savings Potential
                       <ArrowRight className="ml-2 h-5 w-5 inline" />
@@ -688,7 +688,7 @@ export default function HomePage() {
             <p className="text-lg text-slate-300 mb-6 font-light">
               Ready to revolutionize your call center? Book your free consultation today.
             </p>
-            <a href="https://calendly.com/cereva/30min?month=2025-08" target="_blank" rel="noopener noreferrer">
+            <a href="https://calendly.com/cerevaai/30min" target="_blank" rel="noopener noreferrer">
               <button className="ai-button text-white font-light px-8 py-4 ai-hover-lift purple-glow rounded-lg bg-gradient-to-r from-blue-500 to-purple-500 hover:from-blue-600 hover:to-purple-600 transition-all duration-300">
                 <Plus className="mr-2 h-5 w-5 inline" />
                 Book Your Free Call Center Audit
@@ -733,7 +733,7 @@ export default function HomePage() {
             <p className="text-xl text-blue-100 mb-8 max-w-2xl mx-auto font-light">
               Join hundreds of businesses already using Cereva to reduce call center costs by 80% while improving customer satisfaction.
             </p>
-            <a href="https://calendly.com/cereva/30min?month=2025-08" target="_blank" rel="noopener noreferrer">
+            <a href="https://calendly.com/cerevaai/30min" target="_blank" rel="noopener noreferrer">
               <button className="text-lg px-8 py-4 bg-white text-slate-900 hover:bg-slate-100 group font-light ai-hover-lift purple-glow rounded-lg transition-all duration-300">
                 Book Your Free Call Center Audit
                 <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform inline" />

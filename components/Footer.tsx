@@ -56,7 +56,7 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
-                <a href="https://calendly.com/cereva/30min?month=2025-08" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors font-light hover:ai-text-gradient-primary">
+                <a href="https://calendly.com/cerevaai/30min" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors font-light hover:ai-text-gradient-primary">
                   Book Demo
                 </a>
               </li>

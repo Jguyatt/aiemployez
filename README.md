@@ -122,7 +122,7 @@ The application can be deployed to any platform that supports Next.js:
 
 Ready to revolutionize your call center with AI?
 
-- **Book a Demo**: [https://calendly.com/cereva/30min](https://calendly.com/cereva/30min)
+- **Book a Demo**: [https://calendly.com/cerevaai/30min](https://calendly.com/cerevaai/30min)
 - **Email**: hello@cereva.com
 - **Phone**: +1 (555) 123-4567
 

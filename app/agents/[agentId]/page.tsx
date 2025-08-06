@@ -495,7 +495,7 @@ export default function AgentDetailPage() {
                     asChild
                     className="w-full bg-gradient-to-r from-blue-500 to-purple-500 hover:from-blue-600 hover:to-purple-600"
                   >
-                    <a href="https://calendly.com/cereva/30min?month=2025-08" target="_blank" rel="noopener noreferrer">
+                    <a href="https://calendly.com/cerevaai/30min" target="_blank" rel="noopener noreferrer">
                       <ShoppingCart className="h-4 w-4 mr-2" />
                       Book Your Free AI Discovery Audit
                     </a>
@@ -562,7 +562,7 @@ export default function AgentDetailPage() {
               <CardContent>
                 <div className="space-y-3">
                   <Button asChild className="w-full bg-gradient-to-r from-blue-500 to-purple-500 hover:from-blue-600 hover:to-purple-600">
-                    <a href="https://calendly.com/cereva/30min?month=2025-08" target="_blank" rel="noopener noreferrer">
+                    <a href="https://calendly.com/cerevaai/30min" target="_blank" rel="noopener noreferrer">
                       <ShoppingCart className="h-4 w-4 mr-2" />
                       Book Your Free AI Discovery Audit
                     </a>
@@ -574,7 +574,7 @@ export default function AgentDetailPage() {
                     </Link>
                   </Button>
                   <Button asChild variant="outline" className="w-full border-slate-600 text-slate-300 hover:bg-slate-800">
-                    <a href="https://calendly.com/cereva/30min?month=2025-08" target="_blank" rel="noopener noreferrer">
+                    <a href="https://calendly.com/cerevaai/30min" target="_blank" rel="noopener noreferrer">
                       <MessageCircle className="h-4 w-4 mr-2" />
                       Schedule Demo
                     </a>

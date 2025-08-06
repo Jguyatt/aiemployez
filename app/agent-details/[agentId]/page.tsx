@@ -247,7 +247,7 @@ export default function AgentDetailsPage() {
       await new Promise(resolve => setTimeout(resolve, 1000))
       
       // Open Calendly in new tab
-      window.open('https://calendly.com/cereva/30min?month=2025-08', '_blank')
+              window.open('https://calendly.com/cerevaai/30min', '_blank')
     } catch (err) {
       console.error('Contact error:', err)
     } finally {
