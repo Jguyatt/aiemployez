@@ -9,7 +9,7 @@ export const metadata: Metadata = {
   title: 'Cereva - Custom AI Solutions',
   description: 'Transform your business with custom AI solutions that automate workflows and boost revenue',
   icons: {
-    icon: '/favicon.svg',
+    icon: '/logo.png',
   },
 }
 
