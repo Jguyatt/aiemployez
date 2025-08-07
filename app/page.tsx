@@ -293,7 +293,8 @@ export default function HomePage() {
               The ROI is immediate and substantial.
             </p>
             <a href="https://calendly.com/cerevaai/30min" target="_blank" rel="noopener noreferrer">
-              <button className="ai-button-secondary text-white font-light px-8 py-4 ai-hover-lift purple-glow rounded-lg bg-gradient-to-r from-purple-500 to-pink-500 hover:from-purple-600 hover:to-pink-600 transition-all duration-300">
+              <button className="text-white font-light px-8 py-4 ai-hover-lift rounded-lg bg-gradient-to-r from-blue-500 to-cyan-500 hover:from-blue-600 hover:to-cyan-600 transition-all duration-300 border border-cyan-400/30 shadow-lg shadow-cyan-500/25">
+                <DollarSign className="mr-2 h-5 w-5 inline" />
                 Discover Your Savings Potential
                 <ArrowRight className="ml-2 h-5 w-5 inline" />
               </button>
@@ -324,7 +325,8 @@ export default function HomePage() {
               The ROI is immediate and substantial.
             </p>
             <a href="https://calendly.com/cerevaai/30min" target="_blank" rel="noopener noreferrer">
-              <button className="ai-button-secondary text-white font-light px-8 py-4 ai-hover-lift purple-glow rounded-lg bg-gradient-to-r from-purple-500 to-pink-500 hover:from-purple-600 hover:to-pink-600 transition-all duration-300">
+              <button className="text-white font-light px-8 py-4 ai-hover-lift rounded-lg bg-gradient-to-r from-orange-500 to-red-500 hover:from-orange-600 hover:to-red-600 transition-all duration-300 border border-orange-400/30 shadow-lg shadow-orange-500/25">
+                <Zap className="mr-2 h-5 w-5 inline" />
                 Join the AI Automation Revolution
                 <ArrowRight className="ml-2 h-5 w-5 inline" />
               </button>
