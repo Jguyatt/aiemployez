@@ -344,7 +344,7 @@ export default function AgentDetailsPage() {
                   className="border-slate-600 text-slate-300 hover:text-white font-light px-8 py-4"
                 >
                   <Share2 className="mr-2 h-5 w-5" />
-                  Share Framework
+                  Share Solution
                 </Button>
               </div>
             </div>

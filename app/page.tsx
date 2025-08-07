@@ -1,18 +1,18 @@
 import Link from 'next/link'
-import { Check, Star, Users, Clock, MessageSquare, Calendar, Zap, Shield, TrendingUp, Brain, Database, Network, ArrowRight, Play, BarChart3, Smartphone, Sparkles, DollarSign, Timer, TrendingDown, Phone, Mail, ShoppingCart, FileText, Settings, HelpCircle, UserCheck, Target, BarChart, ChevronDown, Activity, PieChart, ArrowUpRight, ArrowDownRight, Pause, Eye, User, Plus, Filter, Download, MoreHorizontal, CheckCircle } from 'lucide-react'
+import { Check, Star, Users, Clock, MessageSquare, Calendar, Zap, Shield, TrendingUp, Brain, Database, Network, ArrowRight, Play, BarChart3, Smartphone, Sparkles, DollarSign, Timer, TrendingDown, Phone, Mail, ShoppingCart, FileText, Settings, HelpCircle, UserCheck, Target, BarChart, ChevronDown, Activity, PieChart, ArrowUpRight, ArrowDownRight, Pause, Eye, User, Plus, Filter, Download, MoreHorizontal, CheckCircle, AlertTriangle } from 'lucide-react'
 import Navigation from '@/components/Navigation'
 import Footer from '@/components/Footer'
 
 const features = [
   {
-    title: 'Custom AI Frameworks',
-    description: 'Tailored AI solutions designed specifically for your business needs',
+    title: 'Custom AI Solutions',
+    description: 'Tailored AI systems designed specifically for your business needs',
     icon: Brain,
     gradient: 'from-blue-500 to-cyan-500'
   },
   {
     title: '24/7 Operation',
-    description: 'AI frameworks that work around the clock without breaks or downtime',
+    description: 'AI systems that work around the clock without breaks or downtime',
     icon: Clock,
     gradient: 'from-purple-500 to-pink-500'
   },
@@ -30,10 +30,10 @@ const features = [
   }
 ]
 
-const aiFrameworks = [
+const aiSolutions = [
   {
     id: 'customer-service',
-    title: 'Customer Service Framework',
+    title: 'Customer Service Automation',
     description: 'Automate customer support, handle inquiries, and resolve issues 24/7',
     icon: HelpCircle,
     gradient: 'from-blue-500 to-cyan-500',
@@ -41,7 +41,7 @@ const aiFrameworks = [
   },
   {
     id: 'sales-automation',
-    title: 'Sales Automation Framework',
+    title: 'Sales Automation System',
     description: 'Automate lead qualification, sales calls, and deal closing processes',
     icon: TrendingUp,
     gradient: 'from-purple-500 to-pink-500',
@@ -49,7 +49,7 @@ const aiFrameworks = [
   },
   {
     id: 'appointment-scheduling',
-    title: 'Appointment Scheduling Framework',
+    title: 'Appointment Scheduling System',
     description: 'Automate meeting scheduling, calendar management, and reminders',
     icon: Calendar,
     gradient: 'from-green-500 to-emerald-500',
@@ -57,7 +57,7 @@ const aiFrameworks = [
   },
   {
     id: 'data-processing',
-    title: 'Data Processing Framework',
+    title: 'Data Processing Automation',
     description: 'Automate data analysis, reporting, and business intelligence tasks',
     icon: BarChart3,
     gradient: 'from-indigo-500 to-purple-500',
@@ -67,28 +67,28 @@ const aiFrameworks = [
 
 const faqs = [
   {
-    question: 'How does your AI framework technology work?',
-    answer: 'Our AI frameworks use advanced machine learning and natural language processing to understand your business processes, automate repetitive tasks, and provide intelligent responses. Each framework is customized to your specific needs and integrates seamlessly with your existing systems.'
+    question: 'How does your AI automation technology work?',
+    answer: 'Our AI systems use advanced machine learning and natural language processing to understand your business processes, automate repetitive tasks, and provide intelligent responses. Each solution is customized to your specific needs and integrates seamlessly with your existing systems.'
   },
   {
     question: 'Can the AI handle multiple languages?',
-    answer: 'Yes! Our AI frameworks support multiple languages and can seamlessly switch between them based on your requirements. This makes it perfect for businesses serving diverse customer bases or operating internationally.'
+    answer: 'Yes! Our AI systems support multiple languages and can seamlessly switch between them based on your requirements. This makes it perfect for businesses serving diverse customer bases or operating internationally.'
   },
   {
     question: 'What happens when the AI can\'t handle a task?',
     answer: 'Our system intelligently escalates complex tasks to human operators while providing them with full context of the interaction. This ensures no issue goes unresolved while maintaining efficiency and quality.'
   },
   {
-    question: 'How quickly can we implement an AI framework?',
+    question: 'How quickly can we implement an AI solution?',
     answer: 'Implementation typically takes 2-4 weeks from start to finish. We handle all the technical setup, training, and integration with your existing systems. Our team works closely with you to ensure a smooth transition.'
   },
   {
-    question: 'What kind of businesses can benefit from AI frameworks?',
-    answer: 'Any business can benefit from AI frameworks - from small businesses to large enterprises. We\'ve helped healthcare providers, e-commerce companies, service businesses, and more automate processes and improve efficiency.'
+    question: 'What kind of businesses can benefit from AI automation?',
+    answer: 'Any business can benefit from AI automation - from small businesses to large enterprises. We\'ve helped healthcare providers, e-commerce companies, service businesses, and more automate processes and improve efficiency.'
   },
   {
     question: 'How do you customize the AI for my business?',
-    answer: 'We start with a free discovery audit to understand your specific business processes, pain points, and goals. Then we design a custom AI framework that addresses your unique needs and integrates with your existing tools and workflows.'
+    answer: 'We start with a free discovery audit to understand your specific business processes, pain points, and goals. Then we design a custom AI solution that addresses your unique needs and integrates with your existing tools and workflows.'
   }
 ]
 
@@ -178,13 +178,13 @@ export default function HomePage() {
           <h1 className="text-5xl md:text-7xl font-light text-white mb-6 leading-tight animate-fade-in purple-glow-text" style={{animationDelay: '0.2s'}}>
             Transform Your Business
             <span className="block ai-text-gradient-primary purple-glow-text">
-              With Custom AI Frameworks
+              With Custom AI Solutions
             </span>
           </h1>
           
           {/* Value Proposition */}
           <p className="text-xl md:text-2xl text-slate-300 mb-8 max-w-4xl mx-auto leading-relaxed font-light animate-fade-in" style={{animationDelay: '0.4s'}}>
-            Automate your business processes with intelligent AI frameworks that work 24/7, 
+            Automate your business processes with intelligent AI systems that work 24/7, 
             handle complex tasks, and never take a break. Reduce costs by up to 80% while improving efficiency.
           </p>
 
@@ -224,16 +224,94 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* AI Framework Revolution Section */}
+      {/* Problem Statement Section - NEW */}
       <section className="ai-section bg-slate-900/20">
         <div className="ai-container">
           <div className="text-center mb-16">
+            <div className="inline-flex items-center px-4 py-2 rounded-full text-sm font-light bg-red-500/20 text-red-300 border border-red-500/30 mb-6">
+              <AlertTriangle className="h-4 w-4 mr-2" />
+              The Hidden Cost Problem
+            </div>
             <h2 className="text-3xl md:text-4xl font-light text-white mb-6 animate-fade-in purple-glow-text">
-              The AI Framework Revolution is Here
+              Business Owners Are Spending Too Much on Manual Systems
             </h2>
             <p className="text-xl text-slate-300 max-w-4xl mx-auto font-light leading-relaxed animate-fade-in" style={{animationDelay: '0.2s'}}>
               Traditional business processes are expensive, inefficient, and limited by human constraints. 
-              AI frameworks operate 24/7, handle complex tasks, and never get tired or frustrated. 
+              Companies spend thousands on manual systems that could be automated with AI, 
+              wasting money on repetitive tasks that technology can handle better.
+            </p>
+          </div>
+          
+          {/* Problem Statistics */}
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
+            {[
+              {
+                title: 'Average Annual Cost',
+                value: '$45,000',
+                description: 'Per employee for manual processes',
+                icon: DollarSign,
+                color: 'text-red-400'
+              },
+              {
+                title: 'Time Wasted',
+                value: '40%',
+                description: 'On repetitive tasks daily',
+                icon: Timer,
+                color: 'text-orange-400'
+              },
+              {
+                title: 'Error Rate',
+                value: '15%',
+                description: 'Human error in manual processes',
+                icon: AlertTriangle,
+                color: 'text-yellow-400'
+              }
+            ].map((stat, index) => {
+              const Icon = stat.icon
+              return (
+                <div key={index} className="group relative" style={{animationDelay: `${index * 0.1}s`}}>
+                  <div className="absolute inset-0 bg-gradient-to-r from-red-500/10 to-orange-500/10 rounded-2xl blur-xl group-hover:blur-2xl transition-all duration-500"></div>
+                  <div className="relative bg-slate-800/40 border border-slate-700/50 rounded-2xl p-6 backdrop-blur-sm group-hover:bg-slate-800/60 transition-all duration-300 group-hover:border-red-500/30">
+                    <div className="text-center">
+                      <div className={`w-12 h-12 bg-gradient-to-r from-red-500 to-orange-500 rounded-lg flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300`}>
+                        <Icon className="h-6 w-6 text-white" />
+                      </div>
+                      <h3 className="text-xl text-white font-light mb-2">{stat.title}</h3>
+                      <p className="text-2xl font-light text-red-400 mb-2">{stat.value}</p>
+                      <p className="text-sm text-slate-400 font-light">{stat.description}</p>
+                    </div>
+                  </div>
+                </div>
+              )
+            })}
+          </div>
+
+          {/* Solution Preview */}
+          <div className="text-center animate-fade-in" style={{animationDelay: '0.6s'}}>
+            <p className="text-lg text-slate-300 font-light mb-6">
+              <span className="ai-text-gradient-primary font-medium">AI automation reduces these costs by 80%</span> while improving efficiency by 40%. 
+              The ROI is immediate and substantial.
+            </p>
+            <a href="https://calendly.com/cerevaai/30min" target="_blank" rel="noopener noreferrer">
+              <button className="ai-button-secondary text-white font-light px-8 py-4 ai-hover-lift purple-glow rounded-lg bg-gradient-to-r from-purple-500 to-pink-500 hover:from-purple-600 hover:to-pink-600 transition-all duration-300">
+                Discover Your Savings Potential
+                <ArrowRight className="ml-2 h-5 w-5 inline" />
+              </button>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      {/* AI Automation Revolution Section */}
+      <section className="ai-section bg-slate-900/30">
+        <div className="ai-container">
+          <div className="text-center mb-16">
+            <h2 className="text-3xl md:text-4xl font-light text-white mb-6 animate-fade-in purple-glow-text">
+              The AI Automation Revolution is Here
+            </h2>
+            <p className="text-xl text-slate-300 max-w-4xl mx-auto font-light leading-relaxed animate-fade-in" style={{animationDelay: '0.2s'}}>
+              Traditional business processes are expensive, inefficient, and limited by human constraints. 
+              AI systems operate 24/7, handle complex tasks, and never get tired or frustrated. 
               The future of business automation is AI-powered.
             </p>
           </div>
@@ -247,7 +325,7 @@ export default function HomePage() {
             </p>
             <a href="https://calendly.com/cerevaai/30min" target="_blank" rel="noopener noreferrer">
               <button className="ai-button-secondary text-white font-light px-8 py-4 ai-hover-lift purple-glow rounded-lg bg-gradient-to-r from-purple-500 to-pink-500 hover:from-purple-600 hover:to-pink-600 transition-all duration-300">
-                Join the AI Framework Revolution
+                Join the AI Automation Revolution
                 <ArrowRight className="ml-2 h-5 w-5 inline" />
               </button>
             </a>
@@ -264,10 +342,10 @@ export default function HomePage() {
               Advanced AI Technology
             </div>
             <h2 className="text-4xl md:text-5xl font-light text-white mb-6 purple-glow-text">
-              Why AI Frameworks Win
+              Why AI Solutions Win
             </h2>
             <p className="text-xl text-slate-300 max-w-3xl mx-auto font-light leading-relaxed">
-              Our AI frameworks outperform traditional processes in every metric that matters
+              Our AI systems outperform traditional processes in every metric that matters
             </p>
           </div>
           
@@ -297,10 +375,10 @@ export default function HomePage() {
         <div className="ai-container">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-light text-white mb-4 purple-glow-text">
-              Your AI Framework Dashboard
+              Your AI System Dashboard
             </h2>
             <p className="text-slate-300 font-light leading-relaxed max-w-2xl mx-auto animate-fade-in" style={{animationDelay: '0.4s'}}>
-              Real-time analytics, performance tracking, and detailed insights for your AI framework operations.
+              Real-time analytics, performance tracking, and detailed insights for your AI automation operations.
             </p>
             <div className="inline-block px-4 py-2 bg-slate-700/50 border border-slate-600/50 rounded-full text-sm text-slate-300 mt-4">
               ✨ Preview: This is what your dashboard will look like
@@ -645,12 +723,12 @@ export default function HomePage() {
               {[
                 {
                   title: 'Free Consultation',
-                  description: 'Get a personalized AI framework assessment',
+                  description: 'Get a personalized AI solution assessment',
                   icon: Sparkles,
                   gradient: 'from-blue-500 to-cyan-500'
                 },
                 {
-                  title: 'Demo Framework',
+                  title: 'Demo System',
                   description: 'Experience AI automation live',
                   icon: Activity,
                   gradient: 'from-purple-500 to-pink-500'

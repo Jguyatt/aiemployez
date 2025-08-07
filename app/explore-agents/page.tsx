@@ -44,7 +44,7 @@ const workflowSteps = [
       'ROI projections and success metrics definition'
     ],
     duration: '1-2 weeks',
-    deliverables: ['Business Analysis Report', 'Process Documentation', 'KPI Framework']
+    deliverables: ['Business Analysis Report', 'Process Documentation', 'KPI Strategy']
   },
   {
     id: 'design',
@@ -149,7 +149,7 @@ export default function ExploreAgentsPage() {
           <h1 className="text-4xl md:text-5xl font-light text-white mb-6 animate-fade-in" style={{animationDelay: '0.2s'}}>
             Our Custom AI
             <span className="block ai-text-gradient-primary ai-glow-text-strong">
-              Framework Process
+              Solution Process
             </span>
           </h1>
           <p className="text-xl text-slate-300 mb-8 max-w-3xl mx-auto font-light animate-fade-in" style={{animationDelay: '0.4s'}}>
@@ -276,7 +276,7 @@ export default function ExploreAgentsPage() {
             Ready to Start Your AI Transformation?
           </h2>
           <p className="text-xl text-blue-100 mb-8 max-w-2xl mx-auto font-light">
-            Book your free AI discovery audit and see how our custom framework process can revolutionize your operations.
+            Book your free AI discovery audit and see how our custom solution process can revolutionize your operations.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a href="https://calendly.com/cerevaai/30min" target="_blank" rel="noopener noreferrer">

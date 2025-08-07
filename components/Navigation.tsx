@@ -29,7 +29,7 @@ export default function Navigation() {
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-8">
             <Link href="/explore-agents" className="text-slate-300 hover:text-white font-light transition-colors">
-              Our Frameworks
+              Our Solutions
             </Link>
           </div>
 
@@ -52,7 +52,7 @@ export default function Navigation() {
             <div className="px-4 py-6 space-y-4">
               <Link href="/explore-agents" onClick={() => setIsMobileMenuOpen(false)}>
                 <Button variant="ghost" className="w-full text-slate-300 hover:text-white font-light">
-                  Our Frameworks
+                  Our Solutions
                 </Button>
               </Link>
             </div>

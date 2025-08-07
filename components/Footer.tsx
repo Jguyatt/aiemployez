@@ -24,7 +24,7 @@ export default function Footer() {
                 </span>
               </h3>
               <p className="text-slate-400 font-light leading-relaxed max-w-md">
-                Transform your business with custom AI frameworks that automate workflows, 
+                Transform your business with custom AI solutions that automate workflows, 
                 boost revenue, and eliminate inefficiencies — no technical team required.
               </p>
             </div>
