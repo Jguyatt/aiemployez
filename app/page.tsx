@@ -303,37 +303,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* AI Automation Revolution Section */}
-      <section className="ai-section bg-slate-900/30">
-        <div className="ai-container">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-light text-white mb-6 animate-fade-in purple-glow-text">
-              The AI Automation Revolution is Here
-            </h2>
-            <p className="text-xl text-slate-300 max-w-4xl mx-auto font-light leading-relaxed animate-fade-in" style={{animationDelay: '0.2s'}}>
-              Traditional business processes are expensive, inefficient, and limited by human constraints. 
-              AI systems operate 24/7, handle complex tasks, and never get tired or frustrated. 
-              The future of business automation is AI-powered.
-            </p>
-          </div>
-          
 
-          
-          <div className="text-center animate-fade-in" style={{animationDelay: '0.6s'}}>
-            <p className="text-lg text-slate-300 font-light mb-6">
-              <span className="ai-text-gradient-primary font-medium">80% cost reduction</span> while improving efficiency by 40%. 
-              The ROI is immediate and substantial.
-            </p>
-            <a href="https://calendly.com/cerevaai/30min" target="_blank" rel="noopener noreferrer">
-              <button className="text-white font-light px-8 py-4 ai-hover-lift rounded-lg bg-gradient-to-r from-orange-500 to-red-500 hover:from-orange-600 hover:to-red-600 transition-all duration-300 border border-orange-400/30 shadow-lg shadow-orange-500/25">
-                <Zap className="mr-2 h-5 w-5 inline" />
-                Join the AI Automation Revolution
-                <ArrowRight className="ml-2 h-5 w-5 inline" />
-              </button>
-            </a>
-          </div>
-        </div>
-      </section>
 
       {/* Features Section */}
       <section className="ai-section relative bg-gradient-to-br from-slate-900/40 via-purple-900/20 to-slate-900/40">
@@ -803,24 +773,35 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* CTA Section */}
+      {/* AI Automation Revolution Section */}
       <section className="ai-section ai-gradient-primary relative overflow-hidden">
         <div className="absolute inset-0 bg-black/20"></div>
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
-          <h2 className="text-3xl md:text-4xl font-light text-white mb-4 purple-glow-text">
-              Ready to Transform Your Call Center?
-            </h2>
-            <p className="text-xl text-blue-100 mb-8 max-w-2xl mx-auto font-light">
-              Join hundreds of businesses already using Cereva to reduce call center costs by 80% while improving customer satisfaction.
+          <h2 className="text-3xl md:text-4xl font-light text-white mb-6 animate-fade-in purple-glow-text">
+            The AI Automation Revolution is Here
+          </h2>
+          <p className="text-xl text-blue-100 mb-8 max-w-4xl mx-auto font-light leading-relaxed animate-fade-in" style={{animationDelay: '0.2s'}}>
+            Traditional business processes are expensive, inefficient, and limited by human constraints. 
+            AI systems operate 24/7, handle complex tasks, and never get tired or frustrated. 
+            The future of business automation is AI-powered.
+          </p>
+          <div className="animate-fade-in" style={{animationDelay: '0.6s'}}>
+            <p className="text-lg text-blue-100 mb-6 font-light">
+              <span className="ai-text-gradient-primary font-medium">80% cost reduction</span> while improving efficiency by 40%. 
+              The ROI is immediate and substantial.
             </p>
             <a href="https://calendly.com/cerevaai/30min" target="_blank" rel="noopener noreferrer">
               <button className="text-lg px-8 py-4 bg-white text-slate-900 hover:bg-slate-100 group font-light ai-hover-lift purple-glow rounded-lg transition-all duration-300">
-                Book Your Free Call Center Audit
+                <Zap className="mr-2 h-5 w-5 inline" />
+                Join the AI Automation Revolution
                 <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform inline" />
               </button>
             </a>
+          </div>
         </div>
       </section>
+
+
 
       {/* Footer */}
       <Footer />
