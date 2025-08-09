@@ -31,6 +31,9 @@ export default function Navigation() {
             <Link href="/explore-agents" className="text-slate-300 hover:text-white font-light transition-colors">
               Our Solutions
             </Link>
+            <Link href="/process" className="text-slate-300 hover:text-white font-light transition-colors">
+              See Process in Action
+            </Link>
           </div>
 
           {/* Mobile Menu Button */}
@@ -53,6 +56,11 @@ export default function Navigation() {
               <Link href="/explore-agents" onClick={() => setIsMobileMenuOpen(false)}>
                 <Button variant="ghost" className="w-full text-slate-300 hover:text-white font-light">
                   Our Solutions
+                </Button>
+              </Link>
+              <Link href="/process" onClick={() => setIsMobileMenuOpen(false)}>
+                <Button variant="ghost" className="w-full text-slate-300 hover:text-white font-light">
+                  See Process in Action
                 </Button>
               </Link>
             </div>
