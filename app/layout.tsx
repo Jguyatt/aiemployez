@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 import React from 'react'
 import './globals.css'
+import VapiWidget from '@/components/VapiWidget'
 
 
 
@@ -31,11 +32,7 @@ export default function RootLayout({
       </head>
       <body className={inter.className}>
         {children}
-        <div 
-          data-vapi-assistant-id="7bfdbaf9-3a36-41a2-bf89-34cbcd2fb5b4" 
-          data-vapi-public-key="0467c949-25f6-40d3-b106-0376ff43b4c2"
-          id="vapi-widget"
-        />
+        <VapiWidget />
       </body>
     </html>
   )
