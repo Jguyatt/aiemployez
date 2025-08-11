@@ -10,6 +10,18 @@
   z-index: 9999 !important;
   display: block !important;
   visibility: visible !important;
+  min-width: 60px !important;
+  min-height: 60px !important;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%) !important;
+  border-radius: 50% !important;
+  box-shadow: 0 4px 20px rgba(102, 126, 234, 0.4) !important;
+  cursor: pointer !important;
+  transition: all 0.3s ease !important;
+}
+
+#vapi-widget:hover {
+  transform: scale(1.1) !important;
+  box-shadow: 0 6px 25px rgba(102, 126, 234, 0.6) !important;
 }
 
 /* Ensure Vapi widget is always visible */
@@ -20,6 +32,18 @@
   z-index: 9999 !important;
   display: block !important;
   visibility: visible !important;
+  min-width: 60px !important;
+  min-height: 60px !important;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%) !important;
+  border-radius: 50% !important;
+  box-shadow: 0 4px 20px rgba(102, 126, 234, 0.4) !important;
+  cursor: pointer !important;
+  transition: all 0.3s ease !important;
+}
+
+[data-vapi-assistant-id]:hover {
+  transform: scale(1.1) !important;
+  box-shadow: 0 6px 25px rgba(102, 126, 234, 0.6) !important;
 }
 
 /* Custom styles */
